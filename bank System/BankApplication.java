@@ -183,13 +183,13 @@ class BankAccount1{
             System.out.println("\n");
 
             switch (option){
-                case 'a':
+                case '1':
                     System.out.println("......................");
                     System.out.println("Balance ="+bal);
                     System.out.println("......................");
                     System.out.println("\n");
                     break;
-                case 'b':
+                case '2':
                     System.out.println("......................");
                     System.out.println("Enter a amount to deposit :");
                     System.out.println("......................");
@@ -197,7 +197,7 @@ class BankAccount1{
                     deposit(amt);
                     System.out.println("\n");
                     break;
-                case 'c':
+                case '3':
                     System.out.println("......................");
                     System.out.println("Enter a amount to Withdraw :");
                     System.out.println("......................");
@@ -205,7 +205,7 @@ class BankAccount1{
                     withdraw(amtW);
                     System.out.println("\n");
                     break;
-                case 'd':
+                case '4':
                     System.out.println("......................");
                     System.out.println("Previous Transaction:");
                     getPreviousTrans();
@@ -213,7 +213,7 @@ class BankAccount1{
                     System.out.println("\n");
                     break;
 
-                case 'e':
+                case '5':
                     System.out.println("......................");
                     break;
                 default:
@@ -221,7 +221,7 @@ class BankAccount1{
                     break;
             }
 
-        }while(option!='e');
+        }while(option!='5');
 
         System.out.println("Thank you for using our banking services");
     }
